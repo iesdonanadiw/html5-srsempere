@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9591794&assignment_repo_type=AssignmentRepo)
 # HTML to HTML5
 
  #### **1. El código del fichero estructura_html.html está en HTML haciendo uso de elementos div para estructurarla. Crea un nuevo fichero llamado estructura_html5.html y realiza los cambios oportunos para que esté escrito en HTML5. Sigue las indicaciones de uso de estas etiquetas semánticas que se detallan a continuación:**
