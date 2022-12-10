@@ -42,6 +42,7 @@
                 <option value="Formación profesional">
                 <option value="Enseñanzas universitarias">
             </datalist>
+            </br>
             <label for="levelenglish">Nivel de Inglés</label>
             <input type="radio" name="levelenglish" id="levelenglish" checked value="0">Sin conocimientos / titulación
             <input type="radio" name="levelenglish" id="levelenglish" value="b1">B1 Preliminary
@@ -49,6 +50,35 @@
             <input type="radio" name="levelenglish" id="levelenglish" value="c1">C1 Advanced
             <input type="radio" name="levelenglish" id="levelenglish" value="c2">C2 Proficiency
         </fieldset>
+        <fieldset>
+            <legend>Intereses en el Torneo</legend>
+            <label for="catinscr">Categoría en la que te quieres inscribir:</label>
+            <q>Te puedes inscribir en varias</q>
+            <!--
+                Principiante: para jugadores que acaban de empezar a jugar al ajedrez y todavía están aprendiendo las reglas básicas del juego.
+                Intermedio: para jugadores que tienen algo de experiencia en el juego y han aprendido las tácticas y estrategias básicas del ajedrez.
+                Avanzado: para jugadores que tienen un buen conocimiento de las tácticas y estrategias del ajedrez y pueden jugar partidas más complejas y desafiantes.
+                Semi-profesional: para jugadores que han alcanzado un alto nivel en el juego y pueden competir con otros jugadores de nivel similar.
+                Profesional: para jugadores que son considerados los mejores en el ajedrez y pueden competir en los campeonatos más importantes del mundo.
+            -->
+            <input type="checkbox" name="catinscr" id="catinscr" value="principiante">Principiante
+            <input type="checkbox" name="catinscr" id="catinscr" value="intermedio">Intermedio
+            <input type="checkbox" name="catinscr" id="catinscr" value="intermedio">Avanzado
+            <input type="checkbox" name="catinscr" id="catinscr" value="intermedio">Semi-profesional
+            <input type="checkbox" name="catinscr" id="catinscr" value="intermedio">Profesional
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos de interés</legend>
+            <label for="inforelev">Información relevante:</label>
+            </br>
+            <textarea name="inforelev" id="" cols="30" rows="2"></textarea>
+            </br>
+            <label for="archive">Documentación a aportar:</label>
+            </br>
+            <input type="file" name="docs" id="docs">
+        </fieldset>
+        </br>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 
