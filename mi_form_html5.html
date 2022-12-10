@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi formulario</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo empresa">
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="https://es.wikipedia.org/wiki/Tablero_de_damas_y_ajedrez">Tablero</a>
+            <a href="https://es.wikipedia.org/wiki/Leyes_del_ajedrez">Reglas</a>
+            <a href="https://es.wikipedia.org/wiki/Estrategia_(ajedrez)">Estraterias</a>
+            <a href="https://es.wikipedia.org/wiki/Festival_de_ajedrez_Ca%C3%B1ada_de_Calatrava">Clasificación</a>
+        </nav>
+    </header>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Información personal</legend>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+            <label for="lastname">Apellidos</label>
+            <input type="text" name="lastname" id="lastname">
+            <label for="fechnac">Fecha de nacimiento</label>
+            <input type="date" name="fechnac" id="fechnac">
+            <label for="completed">Completado: </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formación académica</legend>
+            <label for="niveles">Nivel formativo:</label>
+            <input list="nivelesform" id="niveles">
+            <datalist id="nivelesform" name="nivelesform">
+                <option value="Educación básica">
+                <option value="Educación secundaria obligatoria">
+                <option value="Bachillerato">
+                <option value="Formación profesional">
+                <option value="Enseñanzas universitarias">
+            </datalist>
+            </br>
+            <label for="levelenglish">Nivel de Inglés</label>
+            <input type="radio" name="levelenglish" id="levelenglish" checked value="0">Sin conocimientos / titulación
+            <input type="radio" name="levelenglish" id="levelenglish" value="b1">B1 Preliminary
+            <input type="radio" name="levelenglish" id="levelenglish" value="b2">B2 First
+            <input type="radio" name="levelenglish" id="levelenglish" value="c1">C1 Advanced
+            <input type="radio" name="levelenglish" id="levelenglish" value="c2">C2 Proficiency
+        </fieldset>
+        <fieldset>
+            <legend>Intereses en el Torneo</legend>
+            <label for="catinscr">Categoría en la que te quieres inscribir:</label>
+            <q>Te puedes inscribir en varias</q>
+            <!--
+                Principiante: para jugadores que acaban de empezar a jugar al ajedrez y todavía están aprendiendo las reglas básicas del juego.
+                Intermedio: para jugadores que tienen algo de experiencia en el juego y han aprendido las tácticas y estrategias básicas del ajedrez.
+                Avanzado: para jugadores que tienen un buen conocimiento de las tácticas y estrategias del ajedrez y pueden jugar partidas más complejas y desafiantes.
+                Semi-profesional: para jugadores que han alcanzado un alto nivel en el juego y pueden competir con otros jugadores de nivel similar.
+                Profesional: para jugadores que son considerados los mejores en el ajedrez y pueden competir en los campeonatos más importantes del mundo.
+            -->
+            <input type="checkbox" name="catinscr" id="catinscr" value="principiante">Principiante
+            <input type="checkbox" name="catinscr" id="catinscr" value="intermedio">Intermedio
+            <input type="checkbox" name="catinscr" id="catinscr" value="intermedio">Avanzado
+            <input type="checkbox" name="catinscr" id="catinscr" value="intermedio">Semi-profesional
+            <input type="checkbox" name="catinscr" id="catinscr" value="intermedio">Profesional
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos de interés</legend>
+            <label for="inforelev">Información relevante:</label>
+            </br>
+            <textarea name="inforelev" id="" cols="30" rows="2"></textarea>
+            </br>
+            <label for="archive">Documentación a aportar:</label>
+            </br>
+            <input type="file" name="docs" id="docs">
+        </fieldset>
+        </br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
