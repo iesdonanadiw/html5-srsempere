@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi formulario</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo empresa">
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="https://es.wikipedia.org/wiki/Tablero_de_damas_y_ajedrez">Tablero</a>
+            <a href="https://es.wikipedia.org/wiki/Leyes_del_ajedrez">Reglas</a>
+            <a href="https://es.wikipedia.org/wiki/Estrategia_(ajedrez)">Estraterias</a>
+            <a href="https://es.wikipedia.org/wiki/Festival_de_ajedrez_Ca%C3%B1ada_de_Calatrava">Clasificación</a>
+        </nav>
+    </header>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Información personal</legend>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+            <label for="lastname">Apellidos</label>
+            <input type="text" name="lastname" id="lastname">
+            <label for="fechnac">Fecha de nacimiento</label>
+            <input type="date" name="fechnac" id="fechnac">
+            <label for="completed">Completado: </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formación académica</legend>
+            <label for="niveles">Nivel formativo:</label>
+            <input list="nivelesform" id="niveles">
+            <datalist id="nivelesform" name="nivelesform">
+                <option value="Educación básica">
+                <option value="Educación secundaria obligatoria">
+                <option value="Bachillerato">
+                <option value="Formación profesional">
+                <option value="Enseñanzas universitarias">
+            </datalist>
+            <label for="levelenglish">Nivel de Inglés</label>
+            <input type="radio" name="levelenglish" id="levelenglish" checked value="0">Sin conocimientos / titulación
+            <input type="radio" name="levelenglish" id="levelenglish" value="b1">B1 Preliminary
+            <input type="radio" name="levelenglish" id="levelenglish" value="b2">B2 First
+            <input type="radio" name="levelenglish" id="levelenglish" value="c1">C1 Advanced
+            <input type="radio" name="levelenglish" id="levelenglish" value="c2">C2 Proficiency
+        </fieldset>
+    </form>
+</body>
+
+</html>
